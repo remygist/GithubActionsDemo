@@ -1,0 +1,9 @@
+name: My Custom Action
+description: A custom action to echo a message
+inputs:
+  message:
+    description: 'The message to echo'
+    required: true
+runs:
+  using: 'node16'
+  main: 'index.js'
