@@ -13,6 +13,11 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
+    - name: Install dependencies for custom action
+      run: |
+        cd .github/actions
+        npm install
+
     - name: Get a Random Joke
       run: |
         joke=$(curl -s https://official-joke-api.appspot.com/random_joke)
