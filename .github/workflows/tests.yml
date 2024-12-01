@@ -21,12 +21,10 @@ jobs:
 
     - name: Install dependencies
       run: |
-        cd ..
-        cd github-action-demo
+        cd github-actions-demo
         npm install
 
     - name: Run tests
       run: |
-        cd ..
-        cd github-action-demo
+        cd github-actions-demo
         npm test
