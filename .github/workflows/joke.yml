@@ -1,0 +1,28 @@
+name: Call Funny Joke Action Example
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  tell-joke:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Get a Random Joke
+      run: |
+        joke=$(curl -s https://official-joke-api.appspot.com/random_joke)
+        setup=$(echo $joke | jq -r '.setup')
+        punchline=$(echo $joke | jq -r '.punchline')
+        echo "Joke of the day: $setup"
+        echo "Punchline: $punchline"
+        echo "Now go ahead and push more code! :)"
+
+    - name: Use Funny Joke Action
+      uses: ./.github/actions  # Call your custom action here
+      with:
+        message: 'This is a funny joke message!'  # Optional input for your action
