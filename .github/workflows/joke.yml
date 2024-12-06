@@ -28,6 +28,6 @@ jobs:
         echo "Now go ahead and push more code! :)"
 
     - name: Use Funny Joke Action
-      uses: ./.github/actions  # Call your custom action here
+      uses: ./.github/actions  
       with:
-        message: 'This is a funny joke message!'  # Optional input for your action
+        message: 'This is a funny joke message!'  
