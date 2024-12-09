@@ -1,0 +1,11 @@
+name: Funny Joke Action
+
+runs:
+  using: 'node12'
+  main: 'index.js'
+
+inputs:
+  message:
+    description: 'The message to log'
+    required: false
+    default: 'Hello from the Funny Joke Action!'
