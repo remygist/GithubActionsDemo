@@ -15,7 +15,6 @@ jobs:
 
     - name: Install dependencies for custom action
       run: |
-        cd .github/actions
         npm install
 
     - name: Get a Random Joke
