@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://remygist.github.io/github-actions-demo",
+  "homepage": "https://remygist.github.io/GithubActionsDemo",
   "scripts": {
     "deploy": "gh-pages -d build",
     "dev": "vite",
