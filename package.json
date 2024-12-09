@@ -5,7 +5,7 @@
   "type": "module",
   "homepage": "https://remygist.github.io/GithubActionsDemo",
   "scripts": {
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
